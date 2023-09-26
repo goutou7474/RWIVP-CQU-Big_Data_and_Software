@@ -30,6 +30,7 @@
     <script>
         var citiesPath = "{% static 'json/china-cities.json' %}";
     </script>
+
 </head>
 
 <body >
@@ -45,6 +46,7 @@
         <a href="{% url 'visualization:data_visualization' %}" class="navbar-brand mx-4 mb-3">
             <h4 class="text-primary"><i class="fa-solid fa-chart-user"></i>信息可视化平台</h4>
         </a>
+
         <div class="navbar-nav navbar-nav-custom">
             <a href="{% url 'visualization:data_visualization' %}" class="nav-item nav-link"><i class="fa-solid fa-square-poll-horizontal bg-light"></i>招聘信息</a>
             <a href="{% url 'visualization:chart_visualization' %}" class="nav-item nav-link active"><i class="fa-solid fa-chart-area fa-bounce bg-white"></i>可视化分析</a>
@@ -99,18 +101,19 @@
             </div>
         </div>
     </nav>
+
     <div class="bg-light row g-4  ps-3 pb-3 pe-3">
-    <div class="bg-light col-sm-6 col-xl-3">
+        <div class="bg-light col-sm-6 col-xl-3">
 
-<div class="rounded d-flex bg-white align-items-center justify-content-between p-4">
-<i class="fa-solid fa-users text-primary fa-3x"></i>
-<div class="ms-3">
-<p class="mb-2">总工作数</p>
-<h6 class="mb-0">{{ total_jobs }}个</h6>
-</div>
-</div>
-
+        <div class="rounded d-flex bg-white align-items-center justify-content-between p-4">
+        <i class="fa-solid fa-users text-primary fa-3x"></i>
+        <div class="ms-3">
+        <p class="mb-2">总工作数</p>
+        <h6 class="mb-0">{{ total_jobs }}个</h6>
         </div>
+        </div>
+
+            </div>
         <div class="bg-light col-sm-6 col-xl-3">
             <div class="rounded d-flex bg-white align-items-center justify-content-between p-4">
                 <i class="fa-solid fa-city text-primary fa-3x"></i>
@@ -120,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light col-sm-6 col-xl-3 ">
+        <div class="bg-light col-sm-6 col-xl-3">
             <div class="rounded d-flex bg-white align-items-center justify-content-between p-4">
                 <i class="fa-solid fa-money-bill-1-wave fa-3x text-primary"></i>
                 <div class="ms-3">
@@ -139,6 +142,7 @@
             </div>
         </div>
     </div>
+
     <div class="bg-light row g-4  ps-3 pb-3 pe-3 h-auto">
         <div class="bg-light col-sm-12 col-xl-6 h-auto">
             <div class="rounded p-2 h-auto bg-white">
@@ -188,6 +192,7 @@
         </div>
         </div>
 </div>
+
 </div>
 
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-up-long"></i></a>
